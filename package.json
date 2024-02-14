@@ -1,0 +1,25 @@
+{
+  "name": "test-stackable-ivan",
+  "version": "0.0.1",
+  "main": "index.js",
+  "bin": {
+    "create-test-stackable-ivan": "./cli/create.js",
+    "start-test-stackable-ivan": "./cli/start.js"
+  },
+  "scripts": {
+    "build:config": "node lib/schema.js | json2ts > config.d.ts",
+    "lint": "standard"
+  },
+  "engines": {
+    "node": "^18.8.0 || >=20.6.0"
+  },
+  "devDependencies": {
+    "fastify": "^4.26.0",
+    "standard": "^17.0.0"
+  },
+  "dependencies": {
+    "@platformatic/config": "^1.21.1",
+    "@platformatic/service": "^1.21.1",
+    "json-schema-to-typescript": "^13.0.0"
+  }
+}
