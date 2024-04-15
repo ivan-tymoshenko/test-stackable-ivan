@@ -18,8 +18,8 @@
     "standard": "^17.0.0"
   },
   "dependencies": {
-    "@platformatic/config": "^1.21.1",
-    "@platformatic/service": "^1.21.1",
+    "@platformatic/config": "./../platformatic/platformatic/packages/config",
+    "@platformatic/service": "../../platformatic/platformatic/packages/service",
     "json-schema-to-typescript": "^13.0.0"
   }
 }
